@@ -8,4 +8,5 @@ export const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-start;
+  gap: 3.375rem;
 `
