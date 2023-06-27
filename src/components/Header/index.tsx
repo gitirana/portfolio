@@ -1,11 +1,12 @@
 import { HeaderContainer, ButtonsWrapper } from './styles.ts'
 import { ButtonWrapper } from '../Button/index'
+import logo from '../../assets/logo.svg'
 
 export function Header() {
   return (
     <>
       <HeaderContainer>
-        <img src="src/assets/logo.svg" alt="" />
+        <img src={logo} alt="" />
 
         <ButtonsWrapper>
           <ButtonWrapper
