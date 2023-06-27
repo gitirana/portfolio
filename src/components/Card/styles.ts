@@ -7,6 +7,7 @@ export const Container = styled.div`
   background: ${(props) => props.theme['gray-700']};
   padding: 1rem 1.5rem;
   gap: 0.5rem;
+  width: 100%;
 
   & h1 {
     font-size: 1.5rem;

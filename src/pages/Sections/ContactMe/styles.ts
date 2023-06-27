@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
   font-size: 2rem;
   font-weight: 500;
   color: ${(props) => props.theme['gray-100']};
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 `
 
 export const Wrapper = styled.div`
@@ -16,7 +16,10 @@ export const Wrapper = styled.div`
   gap: 1rem;
 `
 
-export const Footer = styled.div`
+export const Contact = styled.div`
   display: flex;
-  justify-content: center;
+  font-size: 1rem;
+  font-weight: 400;
+  align-items: center;
+  gap: 0.5rem;
 `
