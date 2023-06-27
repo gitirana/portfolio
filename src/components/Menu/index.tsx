@@ -66,18 +66,18 @@ export function Menu() {
         <WorkWrapper>
           <h3>{workExperience[0].company}</h3>
           <ExperienceWrapper>
-            {workExperience[0].roles.map((item) => {
+            {workExperience[0].roles.map((item, index) => {
               return (
                 <>
-                  <Role>{item.role}</Role>
-                  <Time> {item.time}</Time>
-                  <BadgeWrapper>
+                  <Role key={index}>{item.role}</Role>
+                  <Time key={index + 1}> {item.time}</Time>
+                  <BadgeWrapper key={index + 2}>
                     {item.technologies.map((tech, index) => {
                       return <Badge label={tech} key={index} />
                     })}
                   </BadgeWrapper>
 
-                  <ActivitiesWrapper>
+                  <ActivitiesWrapper key={index + 3}>
                     {item.jobDescription.map((description: string, index) => {
                       return (
                         <Activities key={index}>

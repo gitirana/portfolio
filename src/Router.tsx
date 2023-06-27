@@ -5,9 +5,7 @@ import { Main } from './pages/Main/index'
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Main />}>
-        <Route path="/" />
-      </Route>
+      <Route path="/" element={<Main />} />
     </Routes>
   )
 }

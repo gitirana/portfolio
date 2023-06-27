@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ExecutionProps } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<ExecutionProps>`
   * {
     margin: 0;
     padding: 0;
