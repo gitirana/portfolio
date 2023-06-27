@@ -20,16 +20,6 @@ export const Container = styled.div`
   }
 `
 
-export const Badge = styled.div`
-  padding: 0.5rem 1rem;
-  background: ${(props) => props.theme['gray-800']};
-  font-size: 1rem;
-  border-radius: 8px;
-
-  & span {
-    font-weight: 500;
-  }
-`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;

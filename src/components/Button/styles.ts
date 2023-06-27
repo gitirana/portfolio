@@ -8,6 +8,8 @@ const TYPE_COLORS = {
 
 interface TypeProps {
   typeColor: keyof typeof TYPE_COLORS
+  active: boolean
+  unactive: boolean
 }
 
 export const ButtonContainer = styled.button<TypeProps>`
@@ -22,4 +24,17 @@ export const ButtonContainer = styled.button<TypeProps>`
   gap: 0.5rem;
 
   cursor: pointer;
+
+  ${({ active }) =>
+    active &&
+    `
+    width: 100%
+  `}
+
+  ${({ unactive }) =>
+    unactive &&
+    `
+    width: 100%;
+    font-weight: 400;
+  `}
 `

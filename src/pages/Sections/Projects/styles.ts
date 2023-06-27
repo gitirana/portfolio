@@ -17,3 +17,8 @@ export const Wrapper = styled.div`
   gap: 1rem;
   flex-wrap: wrap;
 `
+
+export const Footer = styled.div`
+  display: flex;
+  justify-content: center;
+`

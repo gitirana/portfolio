@@ -12,12 +12,20 @@ interface ButtonProps {
   type: 'primary' | 'secondary' | 'tertiary'
   icon?: string
   label?: string
+  active?: boolean
+  unactive?: boolean
 }
 
-export function ButtonWrapper({ type = 'primary', icon, label }: ButtonProps) {
+export function ButtonWrapper({
+  type = 'primary',
+  icon,
+  label,
+  active = false,
+  unactive = false,
+}: ButtonProps) {
   return (
     <>
-      <ButtonContainer typeColor={type}>
+      <ButtonContainer typeColor={type} active={active} unactive={unactive}>
         {icon &&
           (icon === 'linkedin' ? (
             <LinkedinLogo weight="bold" size={20} />
