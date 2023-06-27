@@ -6,6 +6,12 @@ const TYPE_COLORS = {
   tertiary: 'gray-900',
 }
 
+const HOVER_COLORS = {
+  primary: 'violet-200',
+  secondary: 'gray-700',
+  tertiary: 'gray-800',
+}
+
 interface TypeProps {
   typeColor: keyof typeof TYPE_COLORS
   active: boolean
@@ -24,6 +30,10 @@ export const ButtonContainer = styled.button<TypeProps>`
   gap: 0.5rem;
 
   cursor: pointer;
+
+  &:hover {
+    background: ${(props) => props.theme[HOVER_COLORS[props.typeColor]]};
+  }
 
   ${({ active }) =>
     active &&

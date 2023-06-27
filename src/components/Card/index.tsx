@@ -1,18 +1,27 @@
 import { Container, Wrapper } from './styles'
 import { Badge } from '../Badge/index'
 
-export function Card() {
+interface CardProps {
+  name: string
+  description: string
+  topics: string[]
+  clone_url: string
+}
+
+export function Card(props: CardProps) {
   return (
-    <Container>
-      <h1>ignite-timer</h1>
-      <span>
-        RocketSeat To Do is an app developed during Ignite (Rocketseats
-        Bootcamp) and its used to manage your daily tasks in the form of a to-do
-        list.
-      </span>
+    <Container
+      onClick={() => {
+        window.open(props.clone_url, '_blank')
+      }}
+    >
+      <h1>{props.name}</h1>
+      <span>{props.description}</span>
 
       <Wrapper>
-        <Badge label="React" />
+        {props.topics.map((item, index) => {
+          return <Badge key={index} label={item} />
+        })}
       </Wrapper>
     </Container>
   )

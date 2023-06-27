@@ -12,12 +12,20 @@ export function ContactMe() {
         </Contact>
 
         <Contact>
-          <ButtonWrapper type="secondary" icon="linkedin" />
+          <ButtonWrapper
+            type="secondary"
+            icon="linkedin"
+            url="https://linkedin.com/in/gitirana"
+          />
           @gitirana
         </Contact>
 
         <Contact>
-          <ButtonWrapper type="secondary" icon="github" />
+          <ButtonWrapper
+            type="secondary"
+            icon="github"
+            url="https://github.com/gitirana"
+          />
           @gitirana
         </Contact>
       </Wrapper>

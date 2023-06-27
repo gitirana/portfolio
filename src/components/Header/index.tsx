@@ -8,15 +8,26 @@ export function Header() {
         <img src="src/assets/logo.svg" alt="" />
 
         <ButtonsWrapper>
-          <ButtonWrapper type="secondary" icon="github" header />
-          <ButtonWrapper type="secondary" icon="linkedin" header />
           <ButtonWrapper
             type="secondary"
+            icon="github"
+            header
+            url="https://github.com/gitirana"
+          />
+          <ButtonWrapper
+            type="secondary"
+            icon="linkedin"
+            header
+            url="https://linkedin.com/in/gitirana"
+          />
+
+          <ButtonWrapper
+            type="primary"
             icon="url"
             label="Resume file"
             header
+            url="https://drive.google.com/drive/folders/1_9RJ_PjIdpIo1LdNnacU6Qiw9d5wZ_LK"
           />
-          <ButtonWrapper type="primary" icon="user" label="Contact me" header />
         </ButtonsWrapper>
       </HeaderContainer>
     </>

@@ -7,6 +7,6 @@ export const HeaderContainer = styled.div`
 `
 export const ButtonsWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem;
 `
