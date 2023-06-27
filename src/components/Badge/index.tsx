@@ -5,9 +5,5 @@ interface BadgeProps {
 }
 
 export function Badge({ label }: BadgeProps) {
-  return (
-    <BadgeContainer>
-      <span>{label}</span>
-    </BadgeContainer>
-  )
+  return <BadgeContainer>{label}</BadgeContainer>
 }

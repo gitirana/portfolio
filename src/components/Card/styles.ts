@@ -17,7 +17,14 @@ export const Container = styled.div`
 
   & span {
     font-size: 0.875rem;
+    font-weight: 400;
     color: ${(props) => props.theme['gray-200']};
+  }
+
+  @media (max-width: 768px) {
+    & h1 {
+      font-size: 1.25rem;
+    }
   }
 `
 

@@ -9,6 +9,10 @@ export const Container = styled.div`
   font-weight: 500;
   color: ${(props) => props.theme['gray-100']};
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -21,12 +25,22 @@ export const Wrapper = styled.div`
 export const Badge = styled.div`
   padding: 0.5rem 1rem;
   background: ${(props) => props.theme['gray-800']};
-  font-size: 1rem;
   border-radius: 8px;
 
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  & span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    & span {
+      font-size: 0.875rem;
+    }
+  }
 `
 
 export const BadgeCounter = styled.div`

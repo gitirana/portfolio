@@ -8,10 +8,15 @@ export function Header() {
         <img src="src/assets/logo.svg" alt="" />
 
         <ButtonsWrapper>
-          <ButtonWrapper type="secondary" icon="github" />
-          <ButtonWrapper type="secondary" icon="linkedin" />
-          <ButtonWrapper type="secondary" icon="url" label="Resume file" />
-          <ButtonWrapper type="primary" icon="user" label="Contact me" />
+          <ButtonWrapper type="secondary" icon="github" header />
+          <ButtonWrapper type="secondary" icon="linkedin" header />
+          <ButtonWrapper
+            type="secondary"
+            icon="url"
+            label="Resume file"
+            header
+          />
+          <ButtonWrapper type="primary" icon="user" label="Contact me" header />
         </ButtonsWrapper>
       </HeaderContainer>
     </>

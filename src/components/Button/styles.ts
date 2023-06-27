@@ -28,7 +28,7 @@ export const ButtonContainer = styled.button<TypeProps>`
   ${({ active }) =>
     active &&
     `
-    width: 100%
+    width: 100%;
   `}
 
   ${({ unactive }) =>
@@ -37,4 +37,10 @@ export const ButtonContainer = styled.button<TypeProps>`
     width: 100%;
     font-weight: 400;
   `}
+
+  @media (max-width: 768px) {
+    & span {
+      visibility: hidden;
+    }
+  }
 `

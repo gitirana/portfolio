@@ -14,6 +14,7 @@ interface ButtonProps {
   label?: string
   active?: boolean
   unactive?: boolean
+  header?: boolean
 }
 
 export function ButtonWrapper({
@@ -22,7 +23,10 @@ export function ButtonWrapper({
   label,
   active = false,
   unactive = false,
+  header = false,
 }: ButtonProps) {
+  const isMobile = window.innerWidth < 768 && header
+
   return (
     <>
       <ButtonContainer typeColor={type} active={active} unactive={unactive}>
@@ -32,15 +36,15 @@ export function ButtonWrapper({
           ) : icon === 'github' ? (
             <GithubLogo weight="bold" size={20} />
           ) : icon === 'url' ? (
-            <LinkSimple weight="bold" />
+            <LinkSimple weight="bold" size={isMobile ? 20 : 16} />
           ) : icon === 'user' ? (
-            <User weight="bold" />
+            <User weight="bold" size={isMobile ? 20 : 16} />
           ) : icon === 'out' ? (
             <ArrowSquareOut weight="bold" />
           ) : (
             <EnvelopeSimple weight="bold" size={20} />
           ))}{' '}
-        {label}
+        {!isMobile && label}
       </ButtonContainer>
     </>
   )

@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 218px 1fr;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const MenuWrapper = styled.div`
@@ -11,6 +15,10 @@ export const MenuWrapper = styled.div`
   flex-direction: column;
 
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
 `
 
 export const WorkWrapper = styled.div`
@@ -21,6 +29,12 @@ export const WorkWrapper = styled.div`
   & h3 {
     font-size: 1.25rem;
     font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    & h3 {
+      font-size: 1.125rem;
+    }
   }
 `
 
@@ -37,6 +51,10 @@ export const Role = styled.div`
 export const Time = styled.div`
   color: ${(props) => props.theme['gray-200']};
   font-size: 0.875rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `
 
 export const BadgeWrapper = styled.div`
@@ -67,5 +85,9 @@ export const Activities = styled.div`
     font-weight: 400;
     color: ${(props) => props.theme['gray-100']};
     width: 100%;
+
+    @media (max-width: 768px) {
+      font-size: 0.875rem;
+    }
   }
 `
